@@ -1,0 +1,63 @@
+{% extends 'main.html'%}
+{%load static%}
+{%load i18n%}
+{% block title %}
+{%trans 'Услуга' %}|{{services_detail.title}}
+{%endblock title%}
+
+{% block body %}
+<div class="title__section" style="background-image:url(/static/assets/.png)">
+    <div class="container">
+        <div class="section__title">{{services_detail.title}}</div>
+    </div>
+</div>
+<div class="services__section">
+    <div class="services__section-content">
+        <div class="container">
+            <div class="serviceSlider">
+                {% if services_detail.banner %}
+                <div class="services__section-img">
+                    <img src="{{services_detail.banner.url}}" alt="image">
+                </div>
+                 {%else%}
+                 
+                {%endif%}
+                
+                {% if services_detail.banner1 %}
+                <div class="services__section-img">
+                    <img src="{{services_detail.banner1.url}}" alt="image">
+                </div>
+                 {%else%}
+                 
+                {%endif%}
+                
+                {% if services_detail.banner2 %}
+                <div class="services__section-img">
+                    <img src="{{services_detail.banner1.url}}" alt="image">
+                </div>
+                {%else%}
+                
+                {%endif%}
+                {% if services_detail.banner3 %}
+                <div class="services__section-img">
+                    <img src="{{services_detail.banner1.url}}" alt="image">
+                </div>
+                 {%else%}
+                 
+                {%endif%}
+                {% if services_detail.banner4 %}
+                <div class="services__section-img">
+                    <img src="{{services_detail.banner1.url}}" alt="image">
+                </div>
+                 {%else%}
+                 
+                {%endif%}
+            </div>
+            <div class="services__section-title">{{services_detail.title}}</div>
+            <div class="services__section-text">{{services_detail.description|truncatewords:100|safe}}
+            </div>
+        </div>
+    </div>
+</div>
+
+{%endblock body%}

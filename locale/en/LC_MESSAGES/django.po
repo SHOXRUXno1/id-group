@@ -1,0 +1,233 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-31 11:49+0500\n"
+"PO-Revision-Date: 2023-12-28 12:42+0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.4.1\n"
+
+#: templates/index.html:34
+msgid "Узнать больше"
+msgstr "Read more"
+
+#: templates/index.html:44 templates/main.html:85
+msgid "Контакты"
+msgstr "Contact"
+
+#: templates/index.html:51 templates/main.html:83
+#: templates/main/documents.html:12
+msgid "Документы"
+msgstr "Documents"
+
+#: templates/index.html:113
+msgid "О Компании"
+msgstr "About company"
+
+#: templates/index.html:120
+msgid "Подробнее"
+msgstr "More"
+
+#: templates/index.html:127 templates/main/services.html:15
+msgid "Наши услуги"
+msgstr "Services"
+
+#: templates/index.html:128
+msgid "Основная деятельность общества"
+msgstr "The main activity of the company"
+
+#: templates/index.html:137 templates/main/news.html:30
+#: templates/main/services.html:28
+msgid "Узнать еще"
+msgstr "Find more"
+
+#: templates/index.html:165 templates/main/plans.html:13
+msgid "Тарифный план"
+msgstr "Tariff plan"
+
+#: templates/index.html:187 templates/index.html:207 templates/index.html:227
+#: templates/main/documents.html:29
+msgid "скачать"
+msgstr "download"
+
+#: templates/index.html:242
+msgid "Нам доверяют"
+msgstr "We are trusted by"
+
+#: templates/main.html:68
+msgid "О компании"
+msgstr "About company"
+
+#: templates/main.html:71
+msgid "История компании"
+msgstr "History"
+
+#: templates/main.html:72 templates/main/ruk.html:13
+msgid "Руководство"
+msgstr "Administration"
+
+#: templates/main.html:73 templates/main/department.html:13
+msgid "Проекты"
+msgstr "Projects"
+
+#: templates/main.html:74 templates/main/news.html:15
+#: templates/main/news_detail.html:5
+msgid "Новости"
+msgstr "News"
+
+#: templates/main.html:79
+msgid "Услуги"
+msgstr "Services"
+
+#: templates/main.html:81
+msgid "Тарифы"
+msgstr "Tariff plans"
+
+#: templates/main.html:149
+msgid "меню"
+msgstr "menu"
+
+#: templates/main.html:164 templates/main.html:181
+msgid "Легко связаться. Начинай сейчас."
+msgstr "Get in touch and start right now."
+
+#: templates/main.html:173 templates/main.html:190
+msgid "Отправить"
+msgstr "Send"
+
+#: templates/main.html:237
+msgid "Адрес"
+msgstr "Address"
+
+#: templates/main.html:241
+msgid "Контакт"
+msgstr "Contacts"
+
+#: templates/main.html:246
+msgid "В социальных сетях"
+msgstr "Social platforms"
+
+#: templates/main.html:302
+msgid "© 2024 Все права защищены. Разработка"
+msgstr "© 2024 All rights protected. Developer "
+
+#: templates/main/about.html:14
+msgid "О Компании «УЗИМПЕКСАЛОКА»"
+msgstr "About «O’ZIMPEKSALOQA»"
+
+#: templates/main/contact.html:12
+msgid "Наши Контакты"
+msgstr "Get in touch"
+
+#: templates/main/contact.html:27
+msgid "Телефон"
+msgstr "Phone number"
+
+#: templates/main/contact.html:41
+msgid "Email"
+msgstr "Email"
+
+#: templates/main/contact.html:55
+msgid "Адрес офиса"
+msgstr "Office address"
+
+#: templates/main/servicesPage.html:5
+msgid "Услуга"
+msgstr "Service"
+
+#: templates/main/vacancy.html:13
+msgid "Вакансии"
+msgstr "Vacancy"
+
+#: templates/index.html:168
+msgid "Видеоматериалы"
+msgstr "Video materials"
+
+#: templates/index.html:169
+msgid "Наша миссия"
+msgstr "Our mission"
+
+#: templates/index.html:169
+msgid "Видео по установке камеры"
+msgstr "Camera installation video"
+
+#: templates/index.html:178
+msgid "B2E4k__RTHI"
+msgstr "pPX0iP7lF0k"
+
+#: templates/main/useful_links.html:15
+msgid "Партнёры"
+msgstr "Partners"
+
+#: templates/index.html:544
+msgid "проектов"
+msgstr "Projects"
+
+#: templates/index.html:528
+msgid "Навои"
+msgstr "Navoi"
+
+#: templates/index.html:531
+msgid "Фергана"
+msgstr "Fergana"
+
+#: templates/index.html:365
+msgid "Андижан"
+msgstr "Andijan"
+
+#: templates/index.html:537
+msgid "Наманган"
+msgstr "Namangan"
+
+#: templates/index.html:540
+msgid "Ташкент"
+msgstr "Tashkent"
+
+#: templates/index.html:543
+msgid "Сирьдарья"
+msgstr "Sirdarya"
+
+#: templates/index.html:546
+msgid "Джизак"
+msgstr "Dzhizak"
+
+#: templates/index.html:549
+msgid "Самарканд"
+msgstr "Samarkand"
+
+#: templates/index.html:552
+msgid "Кашкадарья"
+msgstr "Kashkadarya"
+
+#: templates/index.html:374
+msgid "Бухара"
+msgstr "Buxara"
+
+#: templates/index.html:558
+msgid "Хорезм"
+msgstr "Khorezm"
+
+#: templates/index.html:561
+msgid "Каракалпакстан"
+msgstr "Karakalpakstan"
+
+#: templates/index.html:564
+msgid "Сурхандарья"
+msgstr "Surkhandarya"
+
+#~ msgid "Объявления"
+#~ msgstr "E'lonlar"
+
+#~ msgid "Отделы"
+#~ msgstr "Bo'limlar"

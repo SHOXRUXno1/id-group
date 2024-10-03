@@ -1,0 +1,30 @@
+{% extends 'main.html'%}
+{%load static%}
+{%load i18n%}
+{% block title %}
+О деятельности компании
+{%endblock title%}
+
+{% block body %}
+
+
+<div class="title__section" style="background-image:url(/media/banner/administration.jpeg)">
+    <div class="container">
+        <div  style="color: #fff;" class="section__title">{%trans 'Руководство' %}</div>
+    </div>
+</div>
+
+<div class="about__section">
+    <div class="container about">
+        <div class="about__section-content">
+            <div class="about__section-logo">
+            </div>
+            <div class="about__section-text">
+                <p> {{ruk.description|safe}} </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{%endblock body%}

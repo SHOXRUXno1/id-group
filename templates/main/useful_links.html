@@ -1,0 +1,33 @@
+{% extends 'main.html'%}
+{%load static%}
+{%load i18n%}
+
+{% block title %} Наши Партнёры {%endblock title%}
+
+{% block body %}
+
+<div class="title__section"  style="background-image:url(/media/banner/partners.jpeg)">
+    <div class="container">
+        <div style="color: #fff;" class="section__title">{%trans 'Партнёры'%}</div>
+    </div>
+</div>
+<div class="services__section gray">
+    <div class="container">
+        <div class="services__items row">
+            {%for link in useful_links%}
+            <div class="services__item col">
+                <div class="services__item-inner">
+                    <div class="services__card-img"><img src="{{link.image.url}}" alt=""> <a
+                            href="{{link.link}}" class="services__link" target="_blank"></a></div>
+                </div>
+            </div>
+            {%endfor%}
+        </div>
+    </div>
+</div>
+
+
+  
+
+
+{%endblock body%}

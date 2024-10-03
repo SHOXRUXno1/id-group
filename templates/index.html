@@ -1,0 +1,201 @@
+{% extends 'main.html'%}
+{%load i18n%}
+{%load static%}
+
+{% block title %}
+iD-GROUP
+{% endblock title%}
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"/>
+{% block body %}
+<div class="home__section">
+    <div class="home__slider">
+        <div class="owl-carousel owl-theme home__slide">
+            {%for i in main%}
+            <div class="home__slide-item">
+                <div class="slide__wrap" style="background-image: url({{i.image.url}})"></div>
+                <div class="container">
+                    <div class="home__content-title">{{i.title}}</div>
+                    <div class="home__text">{{i.content |truncatewords:35| safe}}
+                    </div>
+                    <a class="home__link" href="{%url 'about'%}">
+                        <svg width="61" height="12" viewBox="0 0 61 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M60.5303 6.53033C60.8232 6.23744 60.8232 5.76256 60.5303 5.46967L55.7574 0.696699C55.4645 0.403806 54.9896 0.403806 54.6967 0.696699C54.4038 0.989593 54.4038 1.46447 54.6967 1.75736L58.9393 6L54.6967 10.2426C54.4038 10.5355 54.4038 11.0104 54.6967 11.3033C54.9896 11.5962 55.4645 11.5962 55.7574 11.3033L60.5303 6.53033ZM0 6.75H60V5.25H0V6.75Z"
+                                  fill="white"></path>
+                        </svg>
+                        {%trans 'Узнать больше'%}
+                    </a>
+                    <div class="home__social-link">
+                        <div class="contact"><a class="contact-item" href="tel:{{contact.phone}}">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.675 12.8167C15.65 12.8167 14.6583 12.65 13.7333 12.35C13.4417 12.25 13.1167 12.325 12.8917 12.55L11.5833 14.1917C9.225 13.0667 7.01667 10.9417 5.84167 8.5L7.46667 7.11667C7.69167 6.88333 7.75833 6.55833 7.66667 6.26667C7.35833 5.34167 7.2 4.35 7.2 3.325C7.2 2.875 6.825 2.5 6.375 2.5H3.49167C3.04167 2.5 2.5 2.7 2.5 3.325C2.5 11.0667 8.94167 17.5 16.675 17.5C17.2667 17.5 17.5 16.975 17.5 16.5167V13.6417C17.5 13.1917 17.125 12.8167 16.675 12.8167Z"
+                                      fill="white"></path>
+                            </svg>
+                            {%trans 'Контакты'%}
+                        </a><a class="contact-item" href="{%url 'documents'%}">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.6666 1.66699H4.99992C4.08325 1.66699 3.34159 2.41699 3.34159 3.33366L3.33325 16.667C3.33325 17.5837 4.07492 18.3337 4.99158 18.3337H14.9999C15.9166 18.3337 16.6666 17.5837 16.6666 16.667V6.66699L11.6666 1.66699ZM13.3333 15.0003H6.66658V13.3337H13.3333V15.0003ZM13.3333 11.667H6.66658V10.0003H13.3333V11.667ZM10.8333 7.50033V2.91699L15.4166 7.50033H10.8333Z"
+                                      fill="white"></path>
+                            </svg>
+                            {%trans 'Документы'%}
+                        </a></div>
+                        <div class="social"><a class="link" href="{{contact.instagram}}">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.0001 7.39609C8.5665 7.39609 7.39658 8.56601 7.39658 9.9996C7.39658 11.4332 8.5665 12.6031 10.0001 12.6031C11.4337 12.6031 12.6036 11.4332 12.6036 9.9996C12.6036 8.56601 11.4337 7.39609 10.0001 7.39609ZM17.8087 9.9996C17.8087 8.92148 17.8185 7.85312 17.7579 6.77695C17.6974 5.52695 17.4122 4.41757 16.4981 3.50351C15.5821 2.58749 14.4747 2.30429 13.2247 2.24374C12.1466 2.1832 11.0782 2.19296 10.002 2.19296C8.92392 2.19296 7.85556 2.1832 6.77939 2.24374C5.52939 2.30429 4.42001 2.58945 3.50595 3.50351C2.58994 4.41953 2.30673 5.52695 2.24619 6.77695C2.18564 7.85507 2.19541 8.92343 2.19541 9.9996C2.19541 11.0758 2.18564 12.1461 2.24619 13.2223C2.30673 14.4723 2.59189 15.5816 3.50595 16.4957C4.42197 17.4117 5.52939 17.6949 6.77939 17.7555C7.85751 17.816 8.92587 17.8062 10.002 17.8062C11.0802 17.8062 12.1485 17.816 13.2247 17.7555C14.4747 17.6949 15.5841 17.4098 16.4981 16.4957C17.4142 15.5797 17.6974 14.4723 17.7579 13.2223C17.8204 12.1461 17.8087 11.0777 17.8087 9.9996ZM10.0001 14.0055C7.7833 14.0055 5.99423 12.2164 5.99423 9.9996C5.99423 7.78281 7.7833 5.99374 10.0001 5.99374C12.2169 5.99374 14.006 7.78281 14.006 9.9996C14.006 12.2164 12.2169 14.0055 10.0001 14.0055ZM14.17 6.76523C13.6524 6.76523 13.2345 6.34726 13.2345 5.82968C13.2345 5.3121 13.6524 4.89414 14.17 4.89414C14.6876 4.89414 15.1056 5.3121 15.1056 5.82968C15.1057 5.95258 15.0816 6.07431 15.0347 6.18788C14.9877 6.30146 14.9188 6.40465 14.8319 6.49156C14.745 6.57846 14.6418 6.64737 14.5282 6.69433C14.4146 6.74129 14.2929 6.76538 14.17 6.76523Z"
+                                      fill="white"></path>
+                            </svg>
+                        </a>
+                            <a class="link" href="{{contact.telegram}}">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M20 10C20 15.5225 15.5225 20 10 20C4.4775 20 0 15.5225 0 10C0 4.4775 4.4775 0 10 0C15.5225 0 20 4.4775 20 10ZM10.3583 7.3825C9.38583 7.78667 7.44167 8.62417 4.52667 9.89417C4.05333 10.0825 3.805 10.2667 3.7825 10.4467C3.74417 10.7517 4.12583 10.8717 4.64417 11.0342C4.715 11.0567 4.78833 11.0792 4.86333 11.1042C5.37417 11.27 6.06083 11.4642 6.4175 11.4717C6.74167 11.4783 7.10333 11.345 7.5025 11.0717C10.2258 9.2325 11.6317 8.30333 11.72 8.28333C11.7825 8.26917 11.8692 8.25083 11.9275 8.30333C11.9858 8.355 11.98 8.45333 11.9742 8.48C11.9358 8.64083 10.4408 10.0317 9.66583 10.7517C9.42417 10.9758 9.25333 11.135 9.21833 11.1717C9.14 11.2525 9.06 11.33 8.98333 11.4042C8.50833 11.8608 8.15333 12.2042 9.00333 12.7642C9.41167 13.0333 9.73833 13.2558 10.0642 13.4775C10.42 13.72 10.775 13.9617 11.235 14.2633C11.3517 14.34 11.4633 14.4192 11.5725 14.4967C11.9867 14.7925 12.3592 15.0575 12.8192 15.0158C13.0858 14.9908 13.3625 14.74 13.5025 13.9908C13.8333 12.2192 14.485 8.3825 14.6358 6.80083C14.645 6.66951 14.6394 6.53757 14.6192 6.4075C14.607 6.30244 14.5559 6.20578 14.4758 6.13667C14.3567 6.03917 14.1717 6.01833 14.0883 6.02C13.7125 6.02667 13.1358 6.2275 10.3583 7.3825Z"
+                                          fill="white"></path>
+                                </svg>
+                            </a>
+                            <a class="link" href="{{contact.youtube}}">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M23.498 6.186a3 3 0 0 0-2.113-2.122C19.992 3.5 12 3.5 12 3.5s-7.993 0-9.385.563A3 3 0 0 0 .502 6.186a31.94 31.94 0 0 0-.502 5.06c0 1.74.175 3.482.502 5.06a3 3 0 0 0 2.113 2.123C4.007 20.5 12 20.5 12 20.5s7.993 0 9.385-.562a3 3 0 0 0 2.113-2.123c.327-1.577.502-3.319.502-5.06 0-1.741-.175-3.482-.502-5.061ZM9.75 15.02V8.98L15.5 12 9.75 15.02Z"
+                                          fill="white"/>
+                                </svg>
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+            {%endfor%}
+        </div>
+        <div class="container" style="position:relative">
+            <div class="home__slider-nav">
+                <div class="prev">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.4815 13.8515C22.8395 14.2095 22.8395 14.7899 22.4815 15.1479L17.6297 19.9997L22.4815 24.8515C22.8395 25.2095 22.8395 25.7899 22.4815 26.1479C22.1235 26.5058 21.5431 26.5058 21.1852 26.1479L15.6852 20.6479C15.3272 20.2899 15.3272 19.7095 15.6852 19.3515L21.1852 13.8515C21.5431 13.4935 22.1235 13.4935 22.4815 13.8515Z"
+                              fill="white"></path>
+                        <circle cx="20" cy="20" r="19.5" stroke="white"></circle>
+                    </svg>
+                </div>
+                <div class="next">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.5185 13.8515C17.1605 14.2095 17.1605 14.7899 17.5185 15.1479L22.3703 19.9997L17.5185 24.8515C17.1605 25.2095 17.1605 25.7899 17.5185 26.1479C17.8765 26.5058 18.4569 26.5058 18.8148 26.1479L24.3148 20.6479C24.6728 20.2899 24.6728 19.7095 24.3148 19.3515L18.8148 13.8515C18.4569 13.4935 17.8765 13.4935 17.5185 13.8515Z"
+                              fill="white"></path>
+                        <circle r="19.5" transform="matrix(-1 0 0 1 20 20)" stroke="white"></circle>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="about__section">
+    <div class="container">
+        <div class="section__title"> {%trans 'О Компании'%}</div>
+        <div class="about__content">
+            {% if about.banner_image1 %}
+            <div class="about__img"><img src="{{ about.banner_image1.url }}"/></div>
+            {% endif %}
+            <div class="about__context">
+                <div class="about__title">{{about.title}}</div>
+                <div class="about__text">{{about.description|truncatewords:100|safe}}
+                </div>
+                <div class="about__btn btn"><a href="{%url 'about'%}">{%trans 'Подробнее'%}</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="services__section">
+    <div class="container">
+        <div class="section__title">{%trans 'Наши услуги'%}</div>
+        <div class="services__note">{%trans 'Основная деятельность общества'%}</div>
+        <div class="services__slide">
+            <div class="services__slider owl-carousel owl-theme">
+                {%for i in services%}
+                <div class="services__card">
+                    <div class="services__card-title">{{i.title}}</div>
+                    <div class="services__card-text" style="font-size: 1em !important;">
+                        {{i.description|truncatewords:30|safe}}
+                    </div>
+                    <div class="services__card-img"><img src="{{i.banner.url}}" alt=""> <a
+                            href="{%url 'services_detail' i.slug%}"
+                            class="services__link"><span>{%trans 'Узнать еще'%}</span></a>
+                    </div>
+                </div>
+                {%endfor%}
+            </div>
+            <div class="container" style="position:relative">
+                <div class="services__slide-nav">
+                    <div class="prev">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.4815 13.8515C22.8395 14.2095 22.8395 14.7899 22.4815 15.1479L17.6297 19.9997L22.4815 24.8515C22.8395 25.2095 22.8395 25.7899 22.4815 26.1479C22.1235 26.5058 21.5431 26.5058 21.1852 26.1479L15.6852 20.6479C15.3272 20.2899 15.3272 19.7095 15.6852 19.3515L21.1852 13.8515C21.5431 13.4935 22.1235 13.4935 22.4815 13.8515Z"
+                                  fill="#000"></path>
+                            <circle cx="20" cy="20" r="19.5" stroke="#000"></circle>
+                        </svg>
+                    </div>
+                    <div class="next">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.5185 13.8515C17.1605 14.2095 17.1605 14.7899 17.5185 15.1479L22.3703 19.9997L17.5185 24.8515C17.1605 25.2095 17.1605 25.7899 17.5185 26.1479C17.8765 26.5058 18.4569 26.5058 18.8148 26.1479L24.3148 20.6479C24.6728 20.2899 24.6728 19.7095 24.3148 19.3515L18.8148 13.8515C18.4569 13.4935 17.8765 13.4935 17.5185 13.8515Z"
+                                  fill="#000"></path>
+                            <circle r="19.5" transform="matrix(-1 0 0 1 20 20)" stroke="#000"></circle>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="services__section">
+    <div class="container">
+        <div class="section__title">{% trans 'Видеоматериалы' %}</div>
+        <div class="services__note">{% trans 'Наша миссия' %}</div>
+    </div>
+
+    <table align="center" cellpadding="0" cellspacing="0" border="0" width="100%">
+        <tr>
+            <td align="center" style="padding: 0;">
+                <table align="center" cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width: 800px;">
+                    <tr>
+                        <td align="center" style="padding: 0;">
+                            {% if video_obj.video %}
+                            <video src="{{ video_obj.video.url }}" controls loop muted width="100%"
+                                   height="30%"></video>
+                            {% endif %}
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="tariffs__section">
+    <div class="container" style="margin-top:64px">
+        <div class="section__title"></div>
+    </div>
+</div>
+<div class="useful__section gray">
+    <div class="container">
+        <br><br>
+        <div class="services__items row">
+            {%for link in links%}
+            <div class="useful__item col" style="overflow: unset;">
+                <div class="useful__item-inner">
+                    <a href="{{link.link}}" target="_blank" style="margin-right: 20px;">
+                        <img src="{{link.image.url}}" alt="" width="110px" height="80px">
+                        <span style="padding-left: 0px;">{{link.name}}</span>
+                    </a>
+                </div>
+            </div>
+            {%endfor%}
+        </div>
+    </div>
+</div>
+<script
+        src="https://kit.fontawesome.com/37d6505749.js"
+        crossorigin="anonymous"
+></script>
+
+{%endblock body%}

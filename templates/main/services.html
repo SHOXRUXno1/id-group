@@ -1,0 +1,35 @@
+{% extends 'main.html'%}
+{%load static%}
+{%load i18n%}
+
+{% block title %}
+Наши услуги
+{%endblock title%}
+
+{% block body %}
+
+
+<div class="title__section" style="background-image:url(/media/banner/services.jpeg)">
+    <div class="container">
+        <div class="section__title">{%trans 'Наши услуги' %}</div>
+    </div>
+</div>
+<div class="services__section gray">
+    <div class="container">
+        <div class="services__items row">
+            {%for i in services%}
+            <div class="services__item col">
+                <div class="services__item-inner">
+                    <div class="services__card-title">{{i.title}}</div>
+                    <div class="services__card-text">{{i.description|truncatewords:32|safe}}
+                    </div>
+                    <div class="services__card-img"><img src="{{i.banner.url}}" alt=""> <a
+                            href="{%url 'services_detail' i.slug%}"
+                            class="services__link"><span>{%trans 'Узнать еще' %}</span></a></div>
+                </div>
+            </div>
+            {%endfor%}
+        </div>
+    </div>
+</div>
+{%endblock body%}

@@ -1,0 +1,231 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-31 11:49+0500\n"
+"PO-Revision-Date: 2023-12-28 15:00+0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: uz\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.1\n"
+
+#: templates/index.html:34
+msgid "Узнать больше"
+msgstr "Qo'shimcha ma'lumot olish uchun"
+
+#: templates/index.html:44 templates/main.html:85
+msgid "Контакты"
+msgstr "Bog'lanish"
+
+#: templates/index.html:51 templates/main.html:83
+#: templates/main/documents.html:12
+msgid "Документы"
+msgstr "Hujjatlar"
+
+#: templates/index.html:113
+msgid "О Компании"
+msgstr "Kompaniya haqida"
+
+#: templates/index.html:120
+msgid "Подробнее"
+msgstr "Batafsil"
+
+#: templates/index.html:127 templates/main/services.html:15
+msgid "Наши услуги"
+msgstr "Bizning xizmatlarimiz"
+
+#: templates/index.html:128
+msgid "Основная деятельность общества"
+msgstr "Asosiy faoliyati"
+
+#: templates/index.html:137 templates/main/news.html:30
+#: templates/main/services.html:28
+msgid "Узнать еще"
+msgstr "Ko'proq ma'lumot olish"
+
+#: templates/index.html:165 templates/main/plans.html:13
+msgid "Тарифный план"
+msgstr "Tarif rejasi"
+
+#: templates/index.html:187 templates/index.html:207 templates/index.html:227
+#: templates/main/documents.html:29
+msgid "скачать"
+msgstr "yuklab oling"
+
+#: templates/index.html:242
+msgid "Нам доверяют"
+msgstr "Bizga ishonganlar"
+
+#: templates/main.html:68
+msgid "О компании"
+msgstr "Kompaniya haqida"
+
+#: templates/main.html:71
+msgid "История компании"
+msgstr "Kompaniya tarixi"
+
+#: templates/main.html:72 templates/main/ruk.html:13
+msgid "Руководство"
+msgstr "Rahbariyat"
+
+#: templates/main.html:73 templates/main/department.html:13
+msgid "Проекты"
+msgstr "Loyihalar"
+
+#: templates/main.html:74 templates/main/news.html:15
+#: templates/main/news_detail.html:5
+msgid "Новости"
+msgstr "Yangiliklar"
+
+#: templates/main.html:79
+msgid "Услуги"
+msgstr "Xizmatlar"
+
+#: templates/main.html:149
+msgid "меню"
+msgstr "menyu"
+
+#: templates/main.html:164 templates/main.html:181
+msgid "Легко связаться. Начинай сейчас."
+msgstr "Aloqaga chiqing va hoziroq boshlang."
+
+#: templates/main.html:173 templates/main.html:190
+msgid "Отправить"
+msgstr "Yuborish"
+
+#: templates/main.html:237
+msgid "Адрес"
+msgstr "Manzil"
+
+#: templates/main.html:241
+msgid "Контакт"
+msgstr "Aloqa"
+
+#: templates/main.html:246
+msgid "В социальных сетях"
+msgstr "Ijtimoiy tarmoqlar"
+
+#: templates/main.html:302
+#, fuzzy
+#| msgid "© 2024 Все права защищены."
+msgid "© 2024 Все права защищены. Разработка"
+msgstr "© 2024 Barcha huquqlar himoyalangan."
+
+#: templates/main/about.html:14
+msgid "О Компании «iD-GROUP»"
+msgstr "«iD-GROUP» haqida"
+
+#: templates/main/contact.html:12
+msgid "Наши Контакты"
+msgstr "Biz bilan bog'lanish"
+
+#: templates/main/contact.html:27
+msgid "Телефон"
+msgstr "Telefon raqam"
+
+#: templates/main/contact.html:41
+msgid "Email"
+msgstr "Email"
+
+#: templates/main/contact.html:55
+msgid "Адрес офиса"
+msgstr "Ofis manzili"
+
+#: templates/main/servicesPage.html:5
+msgid "Услуга"
+msgstr "Xizmat"
+
+#: templates/main/vacancy.html:13
+msgid "Вакансии"
+msgstr "Bo'sh Ishlar"
+
+#: templates/index.html:168
+msgid "Видеоматериалы"
+msgstr "Video lavhalar"
+
+#: templates/index.html:169
+msgid "Наша миссия"
+msgstr "Bizning vazifamiz"
+
+#: templates/index.html:169
+msgid "Видео по установке камеры"
+msgstr "Kamera o'rnatish videosi"
+
+#: templates/index.html:178
+msgid "B2E4k__RTHI"
+msgstr "pPX0iP7lF0k"
+
+#: templates/main/useful_links.html:15
+msgid "Партнёры"
+msgstr "Hamkorlar"
+
+#: templates/index.html:544
+msgid "проектов"
+msgstr "Proyekt"
+
+#: templates/index.html:402
+msgid "Навои"
+msgstr "Navoiy"
+
+#: templates/index.html:459
+msgid "Фергана"
+msgstr "Farg’ona"
+
+#: templates/index.html:362
+msgid "Андижан"
+msgstr "Andijon"
+
+#: templates/index.html:409
+msgid "Наманган"
+msgstr "Namangan"
+
+#: templates/index.html:452
+msgid "Ташкент"
+msgstr "Toshkent"
+
+#: templates/index.html:442
+msgid "Сирьдарья"
+msgstr "Sirdaryo"
+
+#: templates/index.html:383
+msgid "Джизак"
+msgstr "Jizax"
+
+#: templates/index.html:422
+msgid "Самарканд"
+msgstr "Samarqand"
+
+#: templates/index.html:392
+msgid "Кашкадарья"
+msgstr "Qashqadaryo"
+
+#: templates/index.html:374
+msgid "Бухара"
+msgstr "Buxoro"
+
+#: templates/index.html:472
+msgid "Хорезм"
+msgstr "Xorazm"
+
+#: templates/index.html:483
+msgid "Каракалпакстан"
+msgstr "Qoraqalpog’iston"
+
+#: templates/index.html:432
+msgid "Сурхандарья"
+msgstr "Surkhandaryo"
+
+#~ msgid "Объявления"
+#~ msgstr "E'lonlar"
+
+#~ msgid "Отделы"
+#~ msgstr "Bo'limlar"

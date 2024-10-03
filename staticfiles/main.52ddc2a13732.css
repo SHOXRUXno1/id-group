@@ -1,0 +1,34 @@
+.size-slider {
+  visibility: hidden;
+  position: relative;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.size-slider a {
+  text-decoration: none;
+  color: #4f4f4f;
+}
+.size-slider a:hover{
+  color:#E40E32;
+}
+
+.size-slider input {
+  width: 80%;
+  cursor: pointer;
+}
+.dropdown_body-in-top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.size-slider [type="range" i] {
+  appearance: auto;
+  cursor: default;
+  color: -internal-light-dark(rgb(16, 16, 16), rgb(255, 255, 255));
+  padding: initial;
+  border: initial;
+  margin: 2px;
+}
