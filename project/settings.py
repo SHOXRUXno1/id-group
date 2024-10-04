@@ -159,10 +159,10 @@ LOCALE_PATHS = (
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 
-STATICFILES_DIRS = ('/home/idgroupu/id-group.uz/django/static/',)
+STATICFILES_DIRS = '/home/idgroupu/idgroup.uz/django/static',
 
-MEDIA_ROOT = '/home/idgroupu/id-group.uz/django/media/'
-STATIC_ROOT = '/home/idgroupu/id-group.uz/django/staticfiles/'
+MEDIA_ROOT = '/home/idgroupu/idgroup.uz/django/media/'
+STATIC_ROOT = '/home/idgroupu/idgroup.uz/django/staticfiles/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
