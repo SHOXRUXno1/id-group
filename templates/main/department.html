@@ -13,15 +13,11 @@
         <div class="section__title">{%trans 'Проекты' %}</div>
     </div>
 </div>
-
-<div class="about__section">
-    <div class="container about">
-        <div class="about__section-content">
-            <div class="about__section-logo">
-            </div>
-            <div class="about__section-text">
-                {{department.description | safe}}
-            </div>
+<div class="container">
+    <div class="about__section-content">
+        <div class="about__section-logo"
+             style="display: flex; justify-content: center; align-items: center; overflow: hidden; width: 100%; height: 300px;">
+            {{department.description | safe}}
         </div>
     </div>
 </div>

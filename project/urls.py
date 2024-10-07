@@ -20,18 +20,18 @@ from django.conf.urls.static import static
 from django.conf import settings
 from django.conf.urls import handler404, handler500, handler400
 
-urlpatterns = [
+urlpatterns = ([
     path('2770/', admin.site.urls),
     path('', include('uzimpex.urls')),
     path('ckeditor/', include('ckeditor_uploader.urls')),
     path('i18n/', include('django.conf.urls.i18n')),
 ]
+)
 
 urlpatterns += i18n_patterns(
     path('', include('uzimpex.urls')),
 )
 
-handler404 = 'uzimpex.views.page_not_found_view_404'
 handler500 = 'uzimpex.views.server_error_view_500'
 handler400 = 'uzimpex.views.bad_request_view_400'
 

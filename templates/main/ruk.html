@@ -13,18 +13,23 @@
         <div  style="color: #fff;" class="section__title">{%trans 'Руководство' %}</div>
     </div>
 </div>
-
 <div class="about__section">
     <div class="container about">
         <div class="about__section-content">
-            <div class="about__section-logo">
-            </div>
-            <div class="about__section-text">
-                <p> {{ruk.description|safe}} </p>
+            <!-- Логотип / изображение и текст -->
+            <div class="about__section-logo"
+                 style="display: flex; justify-content: center; align-items: center; overflow: hidden; width: 100%; height: auto;">
+                <!-- Включаем и текст, и изображение с адаптивными стилями -->
+                <div style="max-width: 100%; text-align: center;">
+                    <p style="max-width: 100%; height: auto; word-wrap: break-word;">
+                        {{ ruk.description | safe }}
+                    </p>
+                </div>
             </div>
         </div>
     </div>
 </div>
+
 
 
 {%endblock body%}

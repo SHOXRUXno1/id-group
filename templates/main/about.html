@@ -9,7 +9,7 @@
 {% block body %}
 
 
-<div class="title__section" style="background-image:url(/media/banner/id-group_3.jpg)">
+<div class="title__section" style="{% static 'background-image:url(/media/banner/id-group_3.jpg)'%}">
     <div class="container">
         <div class="section__title">{%trans 'О Компании «iD-GROUP»' %}</div>
     </div>
@@ -31,7 +31,7 @@
         <div class="about__section-text">
             <p> {{about.description| safe}} </p>
             {% if about.banner_image1 %}
-            <div class="full__img"><img src="{{about.banner_image1.url}}" alt=""></div>
+            <div class="full__img"><img src="   {{about.banner_image1.url}}" alt=""></div>
             {% endif %}
             <p>{{about.description2|truncatewords:100|safe}}</p>
             {% if about.banner_image2 %}
